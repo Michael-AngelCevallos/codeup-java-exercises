@@ -38,8 +38,46 @@
                 w = true;
                 System.out.println(w);
 
+//                DIFFERENT PRINT METHODS
 
-// ================== STATEMENTS (s-3)
+                /**PRINTLN( … ) / PRINT( … )*/
+
+//                The println("This is an example.") method prints: "This is an example." and MOVES CURSOR TO NEW LINE. In this case is the output a string, but the string could also be from the type int and double.
+
+
+//
+//                        The print("This is an example.") method instead prints just the string "This is an example.", DOES NOT MOVE CURSOR TO NEW LINE. In this case is the output a string, but the string could also be from the type int and double.
+
+
+//
+
+//                        println()/print is efficient for simply printing a line of text.
+//
+//                        If the line of text needs to be formatted (ex: alignment (left/right/etc..-justified) ), then printf would be used.
+
+/**PRINTF(” … “)*/
+
+// printf gives you the option to PRINT A VARIABLE IN A PIECE OF TEXT. For example:
+
+                char letter = 'a';
+                int number = 10;
+                System.out.printf("Give the number we want is: %d", number);
+
+                System.out.printf("the character that im thinking of is: %c", letter);
+
+/** SPECIFIERS */
+
+//                Specifier	                         Type
+
+//                  %c	                           character
+//                  %d	                            integer
+//                  %f	                        floating-point number
+//                  %s	                        a string of characters
+//                  %%	                        print a percent sign
+//                  %e	                       exponential floating-point number
+
+
+ // ================== STATEMENTS (s-3)
 
                 // Statements may be...
                 // Declarations
