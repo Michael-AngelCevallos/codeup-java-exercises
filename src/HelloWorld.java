@@ -180,10 +180,10 @@ public class HelloWorld {
 //todo Object is the most generic type in Java. You can assign any value to a variable of type Object. What do you think will happen when the following code is run?
 
 
-        String theNumberThree = "three";
-        Object o = theNumberThree;
-        int three = (int) o;
-        System.out.println(three);// VARIABLE THREE IS ALREADY DEFINED
+//        String theNumberThree = "three";
+//        Object o = theNumberThree;
+//        int three = (int) o;
+//        System.out.println(three);// VARIABLE THREE IS ALREADY DEFINED
 
 
 //todo Rewrite the following expressions using the relevant shorthand assignment operators:
@@ -191,9 +191,9 @@ public class HelloWorld {
         System.out.println("yo");
 
 
-//        int x = 4;
-//        x = x + 5;
-//        System.out.println(x);// 3.4
+        int x = 4;
+        x = x + 5;
+        System.out.println(x);// 9
 
 
 
@@ -213,9 +213,22 @@ public class HelloWorld {
 
 
 
+
+
     }
 
-}
+
+//    public class ConsoleExercises{
+//        public static void main(String[] args) {
+//
+//            double pi = 3.14159;
+//            System.out.println(pi);
+
+
+        }
+
+
+
 
 
 
