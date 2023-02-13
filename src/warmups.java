@@ -100,17 +100,17 @@ public class warmups {
         /**
          * Conversion-Characters:
          *
-         * %d : decimal integer [byte, short, int, long]
+         * %d : decimal - integer [byte, short, int, long]
          *
-         * %f : floating-point number [float, double]
+         * %f : floating-point - number [float, double]
          *
-         * %c : character Capital C will uppercase the letter
+         * %c : character - Capital C will uppercase the letter
          *
-         * %s : String Capital S will uppercase all the letters in the string
+         * %s : String - Capital S will uppercase all the letters in the string
          *
-         * %h : hashcode A hashcode is like an address. This is useful for printing a reference
+         * %h : hashcode  - A hashcode is like an address. This is useful for printing a reference
          *
-         * %n : newline Platform specific newline character- use %n instead of \n for greater compatibility
+         * %n : newline - Platform specific newline character- use %n instead of \n for greater compatibility
          */
 //                - True or false: classes / methods outside of the java.lang package always need to be imported to use them.
 
