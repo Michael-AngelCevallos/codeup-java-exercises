@@ -19,7 +19,16 @@
 //  - list all characteristics / types of relevant data concerning the peanut butter jar
 
 
-// 1. - start with kitchen, go to pantry
+//- nouns - plates,  knives, bread, peanut butter, milk,
+
+//- categories of nouns - food, utensils
+
+//- characteristics of peanut butter jar
+
+
+// - Shah/Mike
+
+// 1. - go to kitchen, go to pantry
 
 // 2. -look for peanut butter, look for bread, look for jelly
 
@@ -29,16 +38,15 @@
 
 // 5. - take it to kitchen, find plates and knives
 
-// 6. - stage out plates and piece of bread
-
+// 6. - stage out plates and piece of bread next each other, 2 pieces on each plate
 
 // 7. - open peanut butter, and spread across slices of bread evenly
 
-// 8. - next open jelly, and spread across other piece of bread evenly
+// 8. - next open jelly, and spread across opposite piece of bread evenly
 
 // 9. - grab both pieces of bread and put together
 
-// 10. - cut each sandwhich diagonally
+// 10. - cut each sandwich diagonally
 
 // 11. - pour milk
 

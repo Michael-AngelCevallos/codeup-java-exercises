@@ -189,10 +189,10 @@ public class MethodExercises {
     //Use the .random method of the java.lang.Math class to generate random numbers.
 
     public static int rollDice(int sides) {
-        int die1 = (int) (Math.random() * sides) + 1;
-        int die2 = (int) (Math.random() * sides) + 1;
+        int die1 = (int) (Math.random() * sides);
+        int die2 = (int) (Math.random() * sides);
         int total = die1 + die2;
-        System.out.printf("First is %s and the Second is %s.The total is %s.", die1, die2, total);
+        System.out.printf("First number is %s and your Second number is %s.The total is %s.", die1, die2, total);
         return total;
 //        rollDice(6);
 
@@ -201,7 +201,7 @@ public class MethodExercises {
 
     public static void main(String[] args){
 
-        System.out.println("Roll your dice!");
+        System.out.println("Shoot the dice!");
         rollDice(6);
     }
 
