@@ -36,18 +36,21 @@ public class HighLow {
         return rn.nextInt(max) + min;
     }
 
+    // String method
     public static String getGuessMessage(int outcome) {
         String output;
         if (outcome == 0) {
-            output = "GOOD GUESS!";
+            output = "Bout Time, YOU GOT IT!!!";
         } else if (outcome == 1) {
-            output = "LOWER";
+            output = "Pick a LOWER number!\n";
         } else {
-            output = "HIGHER";
+            output = "Pick a HIGHER number!\n";
         }
         return output;
     }
 
+
+    // Method takes your guess and compares it to your answer
     public static int processGuess(int answer, int guess) {
         if (guess == answer) {
             return 0;
@@ -55,21 +58,23 @@ public class HighLow {
         return (guess < answer) ? -1 : 1;
     }
 
+
+    // runs the game( all methods together)
     public static void runGame() {
-        System.out.println("Welcome to the High Low Game!");
+        System.out.println("Hello, Welcome to Higher or Lower!!!");
         int answer = getRandInt(1, 100);
         int outcome;
         do {
-            System.out.println("Please pick a number between 1 and 100");
             int guess = getInteger(1, 100);
             outcome = processGuess(answer, guess);
             System.out.println(getGuessMessage(outcome));
         } while (outcome != 0);
-        System.out.println("Do you wish to play again?");
-        if (sc.next().equals("y")) {
+        System.out.println("Wanna play Again, Y/N?");
+        if (sc.next().equalsIgnoreCase("y")) {
             runGame();
         }
-        System.out.println("Have a nice day!");
+
+        System.out.println("Fine, leave then!");
     }
 
     // get valid int
@@ -78,7 +83,7 @@ public class HighLow {
         if (sc.hasNextInt()) {
             return sc.nextInt();
         } else {
-            System.out.println("Invalid input!");
+            System.out.println("Invalid Input");
             return getInteger();
         }
     }
@@ -88,9 +93,9 @@ public class HighLow {
         System.out.println("Please enter a number between " + min + " and " + max);
         int userNum = getInteger();
         if (userNum >= min && userNum <= max) {
-            return userNum;
+            return userNum ;
         } else {
-            System.out.println("Number out of range!");
+            System.out.println("Whooooaa, too High, I said 1-100, try again !");
             return getInteger(min, max);
         }
     }
