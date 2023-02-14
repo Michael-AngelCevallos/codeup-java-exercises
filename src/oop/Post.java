@@ -1,4 +1,4 @@
-//Consider the following steps to create a peanut butter and jelly sandwich...
+package oop;//Consider the following steps to create a peanut butter and jelly sandwich...
 
 // 1. Get peanut butter jar and jelly jar and bread bag from the pantry and set them on the table
 // - walk
@@ -128,7 +128,7 @@
  // outcome:  */
 // @Override
 //    public String toString() {
-//        return "Post{" +
+//        return "oop.Post{" +
 //                "id=" + id +
 //                ", title='" + title + '\'' +
 //                ", content='" + content + '\'' +
@@ -151,23 +151,45 @@ public class Post {
     public String author;
     public Date created_at;
 
+    public String returnAuthorDateMessage(){
+        return String.format("This post was created by %s on %s",  author, created_at );
+    }
+
     public static void main(String[] args) {
 
-        Post post = new Post();
-        post.id = 1;
-        post.title = "Yo this is my Title";
-        post.content = "";
-        post.author = " Mike";
-        post.created_at = new Date();
+        Post post1 = new Post(); // DID NOT work until I changed name of class to post and Refactored name of file to oop.Post
+        post1.id = 1;// .id ---->> defined as a 'field' and belongs to the object of post
+        post1.title = "Yo this is my Title"; //.title ---->> defined as a 'field' and belongs to the object of post
+        post1.content = "";//.content ---->> defined as a 'field' and belongs to the object of post
+        post1.author = " Mike";// .author ---->> defined as a 'field' and belongs to the object of post
+        post1.created_at = new Date();//.created_at ---->> defined as a 'field' and belongs to the object of post
 
-        System.out.println(post.title);
-        System.out.println(post.created_at);
+
+        Post post2 = new Post(); // DID NOT work until I changed name of class to post and Refactored name of file to oop.Post
+        post2.id = 2;// .id ---->> defined as a 'field' and belongs to the object of post
+        post2.title = "Second Title"; //.title ---->> defined as a 'field' and belongs to the object of post
+        post2.content = "";//.content ---->> defined as a 'field' and belongs to the object of post
+        post2.author = "John";// .author ---->> defined as a 'field' and belongs to the object of post
+        post2.created_at = new Date();//.created_at ---->> defined as a 'field' and belongs to the object of post
+
+
+        System.out.println(post1.title);
+        System.out.println(post2.created_at);
 
         /**change a title that has already been defined */
 
-        post.title = " New Title";
+//        post1.title = " New Title";
 
-        System.out.println(post.title);
+        System.out.println(post1);
+        System.out.println(post2);
+
+        Post p = post1;// renames post1 as p
+        System.out.println(p);// calls post1
+        System.out.println(p.title);// calls p(post1) title, which is the same as original
+
+        System.out.println(post1.returnAuthorDateMessage());
+        System.out.println(post2.returnAuthorDateMessage());
+
 
     }
 
