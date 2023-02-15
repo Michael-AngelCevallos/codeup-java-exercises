@@ -31,20 +31,81 @@ package oop;
                                     /** DISH Exercise */
                            // connected/ works with to dishTest.java
 
+                                        /**Dish Exercise 2 */
+
+/*
+
+-- SHORT ASSIGNMENT #3 --
+Refactor your Dish and DishTest classes...
+
+  todo 1) Change all properties in the Dish class to private visibility (printSummary should remain public)
+  todo 2) Add getters and setters for these properties (write them manually then erase them and use IntelliJ to write them quickly)
+  todo 3) Refactor code as needed in DishTest to access and modify dish object property values
+  todo 4) Add a constructor method to Dish that will assign all properties
+  todo 5) Refactor DishTest again to use the constructor to set all property values rather than setter methods
+ */
+
+
 public class Dish {
 
-    public int costInCents;
-    public String nameOfDish;
-    public boolean wouldRecommend;
+
+    //Identifiers
+    private int costInCents;
+    private String nameOfDish;
+    private static boolean wouldRecommend;
 
 
-// constructor
+  //constructor
+  public Dish (String nameOfDish, int cost, boolean wouldRecommend){
+     this.nameOfDish = nameOfDish;
+     this.costInCents = costInCents;
+     this.wouldRecommend = wouldRecommend;
+}
+
+
+
+ /**GETTERS*/
+  public int getCostInCents() {
+    return costInCents;
+}
+
+public String getNameOfDish(){
+      return nameOfDish;
+}
+
+public boolean getWouldRecommend() {
+    return wouldRecommend;
+}
+
+
+
+/** SETTERS --- NEEDS VOID*/
+
+ public void setCostInCents(int costInCents) {
+    this.costInCents = costInCents;
+}
+
+public void setNameOfDish(String nameOfDish){
+      this.nameOfDish = nameOfDish;
+}
+
+public void setWouldRecommend(boolean wouldRecommend){
+      this.wouldRecommend = wouldRecommend;
+}
+
+
+                                        // constructor
     public void printSummary(int costInCents, String nameOfDish, boolean wouldRecommend) {
         System.out.printf("The plate of\n Name: %s\n Cost: %d\n Recommended? %b\n", nameOfDish, costInCents, wouldRecommend);
 
     }
+ public void eat (){
+System.out.println("Munch Munch Munch!");
+}
 
-    }
+}
+
+
 
 
 

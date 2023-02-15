@@ -145,50 +145,77 @@ public class Post {
 
 
 
-    public int id;
-    public  String title;
-    public String content;
-    public String author;
-    public Date created_at;
+
+public static int id;
+public static String title;
+public static String content;
+public static String author;
+public static Date created_at;
+
+
+    public Post( int id, String title, String content, String author, Date created_at){
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.author = author;
+        this.created_at = created_at;
+    }
+
+// cntrl + return
+
+
+
 
     public String returnAuthorDateMessage(){
         return String.format("This post was created by %s on %s",  author, created_at );
     }
 
+
+
     public static void main(String[] args) {
 
-        Post post1 = new Post(); // DID NOT work until I changed name of class to post and Refactored name of file to oop.Post
-        post1.id = 1;// .id ---->> defined as a 'field' and belongs to the object of post
-        post1.title = "Yo this is my Title"; //.title ---->> defined as a 'field' and belongs to the object of post
-        post1.content = "";//.content ---->> defined as a 'field' and belongs to the object of post
-        post1.author = " Mike";// .author ---->> defined as a 'field' and belongs to the object of post
-        post1.created_at = new Date();//.created_at ---->> defined as a 'field' and belongs to the object of post
 
 
-        Post post2 = new Post(); // DID NOT work until I changed name of class to post and Refactored name of file to oop.Post
-        post2.id = 2;// .id ---->> defined as a 'field' and belongs to the object of post
-        post2.title = "Second Title"; //.title ---->> defined as a 'field' and belongs to the object of post
-        post2.content = "";//.content ---->> defined as a 'field' and belongs to the object of post
-        post2.author = "John";// .author ---->> defined as a 'field' and belongs to the object of post
-        post2.created_at = new Date();//.created_at ---->> defined as a 'field' and belongs to the object of post
+
+
+        Post post1 = new Post(1, "Yo this is my title","yea","Mike", new Date()); // DID NOT work until I changed name of class to post and Refactored name of file to oop.Post/**
+
+        /** Above is constructor, an easier way to define, same as below
+         *MUST BE DEFINED FIRST LINES 156-162 IN ORDER TO WORK
+         */
+
+
+//        post1.id = 1;// .id ---->> defined as a 'field' and belongs to the object of post
+//        post1.title = "Yo this is my Title"; //.title ---->> defined as a 'field' and belongs to the object of post
+//        post1.content = "";//.content ---->> defined as a 'field' and belongs to the object of post
+//        post1.author = " Mike";// .author ---->> defined as a 'field' and belongs to the object of post
+//        post1.created_at = new Date();//.created_at ---->> defined as a 'field' and belongs to the object of post
+//
+//
+//        Post post2 = new Post(id, title, content, author, created_at); // DID NOT work until I changed name of class to post and Refactored name of file to oop.Post
+//        post2.id = 2;// .id ---->> defined as a 'field' and belongs to the object of post
+//        post2.title = "Second Title"; //.title ---->> defined as a 'field' and belongs to the object of post
+//        post2.content = "";//.content ---->> defined as a 'field' and belongs to the object of post
+//        post2.author = "John";// .author ---->> defined as a 'field' and belongs to the object of post
+//        post2.created_at = new Date();//.created_at ---->> defined as a 'field' and belongs to the object of post
 
 
         System.out.println(post1.title);
-        System.out.println(post2.created_at);
+//        System.out.println(post2.created_at);
 
         /**change a title that has already been defined */
 
 //        post1.title = " New Title";
 
-        System.out.println(post1);
-        System.out.println(post2);
+        System.out.println(post1.id);
+//        System.out.println(post2.title);
 
         Post p = post1;// renames post1 as p
         System.out.println(p);// calls post1
         System.out.println(p.title);// calls p(post1) title, which is the same as original
 
         System.out.println(post1.returnAuthorDateMessage());
-        System.out.println(post2.returnAuthorDateMessage());
+//        System.out.println(post2.returnAuthorDateMessage());
 
 
     }
