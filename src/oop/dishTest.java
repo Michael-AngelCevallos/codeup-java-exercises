@@ -21,6 +21,9 @@ package oop;
                 System.out.println("Your dish is: " + dish.getNameOfDish()+"\n"  + "Dish cost $ " + dish.getCostInCents() + " " + " \nI would recommend: " + dish.getWouldRecommend());
                 //call them eating the dish
                 dish.eat();
+
+
+
             }
         }
 
