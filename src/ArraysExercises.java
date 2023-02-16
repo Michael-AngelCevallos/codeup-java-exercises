@@ -15,7 +15,7 @@ public class ArraysExercises {
     // -It should return an array whose length is 1 greater than the passed array, with the passed person object at the end of the array.
 
 //    String person;
-//    public void addPerson(String name){
+//    public static void addPerson(String name){
 //        person = name;
 //
 //    }
@@ -37,11 +37,20 @@ public class ArraysExercises {
             System.out.println(person);
 
 
-                String[] people = Arrays.copyOf(persons, 4);
+
+                String[] people = Arrays.copyOf(persons, 4);// the 4 allows us to add a 4th person(people) to the array.
                 System.out.println(Arrays.toString(people));// returns null
                 people[3] = "Jovan";
                 System.out.println(Arrays.toString(people));// adds Jovan to the end of list
 
+
+
+                /** Add a 5th person */
+//                people[4] = "Anthony";// does not work because newLength on line 41, only accepts 4( which is the place Jovan takes), in order to work you would have to change 4 to 5 on line 41
+//                System.out.println(Arrays.toString(people));
+
+
+            }
             }
 
         }
@@ -50,6 +59,5 @@ public class ArraysExercises {
 
 
 
-    }
 
 
