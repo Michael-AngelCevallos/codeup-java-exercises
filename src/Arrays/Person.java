@@ -1,4 +1,4 @@
-
+package Arrays;
 
 //todo Create Person class inside of src
  public class Person {
@@ -13,8 +13,9 @@
 
     //CONSTRUCTOR <<<------------
     //TODO: The class should have a constructor that accepts a String value and sets the person's name to the passed string.
-    public Person (String name) {
+    public Person(String name, int age) {
        this.name = name;// dont have to use "this" keyword but doesn't hurt and gives you more access later on
+        this.age= age;
     }
     //end of constructor
 
@@ -43,6 +44,13 @@
         System.out.println("Hello, My name is " + this.name + " and my age is" + this.age);
     }
 
+//    public static void makePeopleOlder(Person[] person){
+//        for(Person person :people){
+//
+//        }
+//    }
+
+
 
 
     //methods end
@@ -54,7 +62,7 @@
 
         /** puts the name Mike into variable of m*/
 
-        Person m = new Person("Mike");
+        Person m = new Person("Mike", 99);
         m.sayHello();//sout's sayHello method with "Mike" now added in
 
 
@@ -86,13 +94,13 @@
 //        Person person2 = person1;
 //        System.out.println(person1 == person2);// RETURNS TRUE, BECAUSE "==" SIGN IS ASKING IF IT IS TRUE OR FALSE THAT PERSON1 IS THE SAME AS PERSON 2 <<<<---------
 
-        Person person1 = new Person("John");
-        Person person2 = person1;
-        System.out.println(person1.getName());// RETURNS JOHN
-        System.out.println(person2.getName());// RETURNS JOHN
-        person2.setName("Jane");
-        System.out.println(person1.getName());// RETURNS JANE
-        System.out.println(person2.getName());// RETURNS JANE
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1.getName());// RETURNS JOHN
+//        System.out.println(person2.getName());// RETURNS JOHN
+//        person2.setName("Jane");
+//        System.out.println(person1.getName());// RETURNS JANE
+//        System.out.println(person2.getName());// RETURNS JANE
 
 
 
