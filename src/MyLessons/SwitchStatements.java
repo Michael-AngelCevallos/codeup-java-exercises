@@ -11,13 +11,17 @@ package MyLessons;
 
     /**Breaks - if you don't have breaks, it will post the sout's of all remaining cases after your case has been caught*/
     /**For Example if there were no breaks below, the console would sout every case after tuesday! <--------*/
+
+
 public class SwitchStatements {
+   private static String day = "Tuesday"; // must have static in order to work with psvm method
+
 
     public static void main(String[] args) {
 
         /** We are writing program to check to see if*/
 
-        String day = "Tuesday";
+
 
         switch(day){     // <------- inside parenthesis you put what variable/type you would like to test
             case "Sunday" : System.out.println("It is Sunday!");// everything after the colon is what you would like to do if it isn't Friday
@@ -40,6 +44,8 @@ public class SwitchStatements {
 
             case "Saturday" : System.out.println("It's Saturday");
             break;
+
+            default : System.out.println("That is not a day");// if variable is not one of the days in the cases above
 
         }
     }
