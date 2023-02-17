@@ -11,9 +11,9 @@ public class InputTest {
 
             System.out.println(input.getString());
 
-            System.out.println(input.getInt(1, 100));
+            System.out.println(input.getInt(1,10));
 
-            System.out.println(input.getDouble(1, 10000));
+            System.out.println(input.getDouble(1, 10));
 
             System.out.println(input.yesNo());
 
