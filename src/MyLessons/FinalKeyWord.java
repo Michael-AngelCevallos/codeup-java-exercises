@@ -1,7 +1,7 @@
 package MyLessons;
 
 /** Final Keyword - once something is declared final it cannot be changed/updated later */
-
+/**Think of it as a version of a constant for JS */
 
 public class FinalKeyWord {
 
