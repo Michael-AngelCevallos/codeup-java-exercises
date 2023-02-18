@@ -65,12 +65,8 @@ public class PrintF {
         System.out.println();
 
         /** Flags - adds an effect to output based on the flag added to format specifier*/
-        /*
 
-
-
-
-         */
+        /** Original*/
         System.out.printf("You have this much money %f", myDouble);// returns 3.140000
         System.out.println();
 
@@ -78,6 +74,7 @@ public class PrintF {
         System.out.printf("You have this much money %.1f", myDouble); // prints only 1 number to the right of a decimal - returns 3.1
         System.out.println();
 
+        /** Justify right*/
         System.out.printf("You have this much money %20f", myDouble);//- returns "You have this much money              3.140000"
         System.out.println();
 
@@ -85,12 +82,13 @@ public class PrintF {
         System.out.printf("You have this much money %+f", myDouble);// return You have this much money +3.140000- adds plus sign to front
         System.out.println();
 
-        /**, : comma grouping separators if number > 1000*/
+        /** , : comma grouping separators if number > 1000*/
         System.out.printf("You have this much money %,f", myDouble2);// adds comma to 1000 place - returns 1,000.000000;
         System.out.println();
 
-        /**  0 : numeric values are zero padded*/
+        /**  0 : numeric values are zero padded(takes off everything after the decimal and returns*/
         System.out.printf("You have this much money %.0f", myDouble);// takes off everything from decimal and to the right -returns 3
+
 
     }
 }
