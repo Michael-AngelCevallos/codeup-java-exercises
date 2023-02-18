@@ -33,9 +33,8 @@ public class ForEachLoop {
 
         for(String i : cars){
             System.out.println(i); // returns list on multiple lines
+
         }
-
-
 
     }
 
