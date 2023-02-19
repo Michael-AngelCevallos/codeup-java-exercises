@@ -41,38 +41,38 @@ public class MoviesApplication {
         System.out.println("Wanna see our Animated horror category?.....Type 5 <-------");
         System.out.println("Wanna see our sci-fi category?......Type 6<--------");
 
-//        Takes the users input and puts into scanner
-        Input movieInput = new Input();
-        int inputChoice = scanner.nextInt(); // Scans the next token of the input as an int.
-    }
-        public static void movie () {
-            boolean decision = true;
-            Movie[] movieArray = MoviesArray.findAll();
-            Input inputChoice = new Input();
-            while (decision) {
-            }
-            if (inputChoice == 2) {
-                System.out.println("Ok! Check out our List Of Movies!");
-                System.out.println(Arrays.toString(findAll()));
-            } else if (inputChoice == 3) {
-                System.out.println("Don't Cry! Here's all our Drama movies: ");
-            } else if (inputChoice == 4) {
-                System.out.println("Spooky!. Here's a List of our Horror Movies: ");
-            } else if (inputChoice == 5) {
-                if (movie.getCategory().equals("animated")) {
-                    System.out.println(movieArray.getName() + " --- " + movie.getCategory());
-                    System.out.println("\"To Infinity and Beyond\"! Here's all our Animated Movies: ");
-                } else if (inputChoice == 6) {
-                    System.out.println("Watch out for Aliens! Here's our Sci-fi Movies: ");
-                } else if (inputChoice == 0) {
-                    System.out.println("See you next time!");
-                } else {
-                    System.out.println("See you next time!!!");
-                }
-            }
-        }
-    }
-}
+////        Takes the users input and puts into scanner
+//        Input movieInput = new Input();
+//        int inputChoice = scanner.nextInt(); // Scans the next token of the input as an int.
+//    }
+//        public static void movie () {
+//            boolean decision = true;
+//            Movie[] movieArray = MoviesArray.findAll();
+//            Input inputChoice = new Input();
+//            while (decision) {
+//            }
+//            if (inputChoice == 2) {
+//                System.out.println("Ok! Check out our List Of Movies!");
+//                System.out.println(Arrays.toString(findAll()));
+//            } else if (inputChoice == 3) {
+//                System.out.println("Don't Cry! Here's all our Drama movies: ");
+//            } else if (inputChoice == 4) {
+//                System.out.println("Spooky!. Here's a List of our Horror Movies: ");
+//            } else if (inputChoice == 5) {
+//                if (movie.getCategory().equals("animated")) {
+//                    System.out.println(movieArray.getName() + " --- " + movie.getCategory());
+//                    System.out.println("\"To Infinity and Beyond\"! Here's all our Animated Movies: ");
+//                } else if (inputChoice == 6) {
+//                    System.out.println("Watch out for Aliens! Here's our Sci-fi Movies: ");
+//                } else if (inputChoice == 0) {
+//                    System.out.println("See you next time!");
+//                } else {
+//                    System.out.println("See you next time!!!");
+//                }
+//            }
+//        }
+//    }
+//}
 
 //        switch (choice) {
 //            case (0):
@@ -120,3 +120,5 @@ public class MoviesApplication {
 //                System.out.println("Please Wait..");
 //                break;
 
+    }
+}
