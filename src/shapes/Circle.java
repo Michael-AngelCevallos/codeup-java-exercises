@@ -15,11 +15,12 @@ public class Circle {
     }
 
 
-    public double getCircumference(){
+    public double getCircumference() {
         return 2 * Math.PI * this.radius;
     }
 
     public static void main(String[] args) {
         System.out.println();
+
     }
 }
