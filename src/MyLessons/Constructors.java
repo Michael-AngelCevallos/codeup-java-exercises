@@ -31,6 +31,7 @@ public class Constructors {
         /** Use with Method(** look at Human.java class)*/
        human2.eat();// returns "Alex is eating"
 
+        // extra example
        human4.beautiful();
 
 
