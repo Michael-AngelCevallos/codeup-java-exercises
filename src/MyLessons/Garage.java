@@ -9,8 +9,5 @@ public class Garage {
         System.out.println("The " + car +" is parked");
     }
 
-    @Override
-    public String toString() {
-        return "Garage{}";
-    }
+
 }
