@@ -18,12 +18,26 @@ package ClassNotes.AbstractClasses;
  *
  */
 
+
+
+
 public class AbstractClass {
 
 
 
 
     public static void main(String[] args) {
+
+//        Vehicle vehicle = new Vehicle() { // Cannot use because its been declared abstract
+//            @Override
+//            protected void turnOn() {
+//
+//            }
+
+
+
+        Car car = new Car();
+        car.turnOn();// returns Turn Key, your car is on!
 
 
 
