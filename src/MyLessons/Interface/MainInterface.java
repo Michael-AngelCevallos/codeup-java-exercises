@@ -7,4 +7,23 @@ package MyLessons.Interface;
 
 
 public class MainInterface {
+
+    public static void main(String[] args) {
+
+        /** Rabbit Implements Prey Interface */
+        Rabbit rabbit = new Rabbit();
+        rabbit.flee();// calls and returns message from rabbit class
+
+
+/** Hawk Implements Predator Interface */
+        Hawk hawk = new Hawk();
+        hawk.hunt();
+
+
+        /** Fish implements BOTH Interfa ces of Prey and Predator*/
+        Fish fish = new Fish();
+
+        fish.flee();
+        fish.hunt();
+    }
 }
