@@ -7,10 +7,7 @@ package MyLessons.Inheritance;
 
 public class Bicycle extends Vehicle{
 
-    int numberOfWheels = 2;
-
     int pedals = 2;
-
 
 
 

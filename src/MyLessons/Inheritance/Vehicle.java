@@ -1,5 +1,6 @@
 package MyLessons.Inheritance;
 
+/** Superclass / Parentclass to car and bicycle class */
 public class Vehicle {
 
     double speed;

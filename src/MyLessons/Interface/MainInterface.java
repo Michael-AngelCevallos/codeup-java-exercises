@@ -15,7 +15,7 @@ public class MainInterface {
         rabbit.flee();// calls and returns message from rabbit class
 
 
-/** Hawk Implements Predator Interface */
+    /** Hawk Implements Predator Interface */
         Hawk hawk = new Hawk();
         hawk.hunt();
 
