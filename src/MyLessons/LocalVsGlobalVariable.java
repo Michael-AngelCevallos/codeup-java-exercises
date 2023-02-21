@@ -14,6 +14,9 @@ public class LocalVsGlobalVariable {
     public static void main(String[] args) {
 
         DiceRoller diceroller = new DiceRoller();// rolls dice- returns method from DiceRoller class
+
+        System.out.println(diceroller.number);
+
     }
 
 }

@@ -12,9 +12,22 @@ public class CarClassForOOPLesson {
         void drive() {
             System.out.println("You drive the car");
         }
-            void brake(){
+
+    @Override
+    public String toString() {
+        return "CarClassForOOPLesson{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", color='" + color + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
+    void brake(){
            System.out.println("You step on the break");
 
+/** toString for toString Method class */
 
 
 
