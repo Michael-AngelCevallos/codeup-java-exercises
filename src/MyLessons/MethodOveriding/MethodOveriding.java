@@ -11,12 +11,12 @@ public class MethodOveriding {
 
 
         Dog dog = new Dog();
+        dog.speak(); // returns sout from dog class(Child Class
 
-        dog.speak(); // returns sout from dog class
+
 
         Animal animal = new Animal();
-
-        animal.speak();// returns sout from Animal Class
+        animal.speak();// returns sout from Animal Class(Parent/Super Class)
     }
 
 
