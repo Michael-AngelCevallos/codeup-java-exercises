@@ -24,5 +24,11 @@ public class Arrays {
             System.out.println(cars[i]);
         }
 
+
     }
+
+
+//    public static Object asList(int i, int i1, int i2) {
+//
+//    }
 }
