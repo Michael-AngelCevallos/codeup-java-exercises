@@ -13,7 +13,7 @@ public class AbstractCLasses {
 
         // WITHOUT abstract declaration you can create instances of both classes
 //        Vehicle vehicle = new Vehicle();
-//        Car car =new Car();
+//        Car car = new Car();
 
         // WITH abstract declaration you now can only instance the class that is NOT abstract
         Car car1 = new Car();

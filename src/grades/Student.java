@@ -11,14 +11,14 @@ public class Student {
     //todo It should have private properties for the student's name, and grades;
 
 private String name;
-private int grades;
+private  ArrayList<Integer> grades = new ArrayList<>();
 
 
 
-// todo The student class should have a (1)constructor that sets name property, and initializes the grades property as an empty ArrayList;
+    // todo The student class should have a (1)constructor that sets name property, and initializes the grades property as an empty ArrayList;
     public Student(String name, int grades) {
         this.name = name;
-        this.grades = grades;
+        this.grades.add(grades);
     }
 
 
@@ -35,15 +35,21 @@ private int grades;
 
     // adds the given grade to the grades property
     public void addGrade(int grade){
-        this.grades = new grades;
+       this.grades.add(grade);
     }
 
     // returns the average of the students grades
-    public double getGradeAverage(){
+    public double getGradeAverage() {
+        double sum = 0;
+        for (int grade : grades) {
+            sum += grade;
+        }
+        return sum/ grades.size();
 
     }
-
-
+    public ArrayList<Integer> getGrades(){
+        return this.grades;
+    }
     public static void main(String[] args) {
 
         ArrayList<String> name = new ArrayList<>();
