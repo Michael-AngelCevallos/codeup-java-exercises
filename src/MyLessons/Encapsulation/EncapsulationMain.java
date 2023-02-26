@@ -4,7 +4,7 @@ package MyLessons.Encapsulation;
 
 /** Encapsulation - attributes of a class will be Hidden or Private
  *                  can be accessed only through special methods(Getters & Setters)
- *                  You Should make attributes private if you dont have a reason to make them public
+ *                  You Should make attributes private if you don't have a reason to make them public
  * */
 
 
@@ -19,8 +19,8 @@ public class EncapsulationMain {
         Cars car1 = new Cars("Chevy", "Silverado", 2017);
 
 
-        /** But trying to access a variable( like make) by itself willnot without getters and setters */
-            /** make is not visibible below because it is private */
+        /** But trying to access a variable( like make) by itself will not without getters and setters */
+            /** make is not visible below because it is private */
 
 //        System.out.println(car.make);
 
@@ -45,11 +45,6 @@ public class EncapsulationMain {
 
         car1.setMake("Jeep");
         System.out.println(car1.getMake());
-
-
-
-
-
 
 
     }
